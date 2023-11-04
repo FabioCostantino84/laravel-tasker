@@ -13,7 +13,7 @@ class TasksController extends Controller
      */
     public function index()
     {
-        $tasks = Task::all();
+        $tasks = Task::orderByDesc('id')->get();
 
         //dd($tasks);
 
@@ -33,7 +33,15 @@ class TasksController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // creiamo una istanza e salviamo il dato
+        /* dd($request->all()); */ // restituisce il task inserito nel form
+
+        $task = new Task;
+        $task->description = $request->description;
+
+        $task->save();
+
+        return to_route('tasks.index');
     }
 
     /**
