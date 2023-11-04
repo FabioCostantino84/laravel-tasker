@@ -3,9 +3,18 @@
 @section('main-content')
 
 @include('partials.taskCreateForm')
-    
 
-<div class="table-responsive">
+@if (session('message'))
+
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  <strong>attention!</strong> {{session('message')}}
+</div>
+    
+@endif
+
+
+<div class="container table-responsive">
     <table class="table table-primary">
         <thead>
             <tr>

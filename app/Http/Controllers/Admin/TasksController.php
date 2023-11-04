@@ -65,7 +65,12 @@ class TasksController extends Controller
      */
     public function update(Request $request, Task $task)
     {
-        //
+        //dd($request->all(), $task);
+
+        $data = $request->all();
+
+        $task->update($data);
+        return to_route('tasks.index')->with('message', 'task updated!');
     }
 
     /**

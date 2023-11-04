@@ -32,7 +32,7 @@
     </header>
 
 
-    <main class="bg-light">
+    <main class=" bg-info">
         @yield('main-content')
     </main>
 
