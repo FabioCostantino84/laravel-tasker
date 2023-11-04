@@ -7,11 +7,11 @@
             <form action="{{ route('tasks.store') }}" method="post">
 
                 @csrf
-                
+
                 <div class="mb-3">
                     <label for="" class="form-label">Task description</label>
-                    <textarea class="form-control" name="task" id="task" aria-describedby="helpId"
-                        placeholder="task"></textarea>
+                    <textarea class="form-control" name="description" id="description" aria-describedby="helpId"
+                        placeholder="description"></textarea>
                     <small id="helpId" class="form-text text-muted">Help text</small>
                 </div>
 
