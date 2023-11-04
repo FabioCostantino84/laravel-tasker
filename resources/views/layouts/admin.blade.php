@@ -17,10 +17,23 @@
 
 <body>
 
+    <header class="bg-dark">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" href="#" aria-current="page">Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Tasks</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">User' s page</a>
+            </li>
+        </ul>
+    </header>
+
+
     <main class="bg-light">
-
         @yield('main-content')
-
     </main>
 
 </body>
