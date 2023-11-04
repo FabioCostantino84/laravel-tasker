@@ -57,7 +57,7 @@ class TasksController extends Controller
      */
     public function edit(Task $task)
     {
-        //
+        return view('admin.tasks.edit', compact('task'));
     }
 
     /**

@@ -13,7 +13,7 @@
                 <th scope="col">DESCRIPTION</th>
                 <th scope="col">STATUS</th>
                 <th scope="col">DATE</th>
-                <th scope="col">SHOW</th>
+                <th scope="col">ACTIONS</th>
             </tr>
         </thead>
         <tbody>
@@ -25,6 +25,8 @@
                 <td>{{$task->created_at}}</td>
                 <td>
                     <a class="btn btn-primary btn-sm " href="{{ route('tasks.show', $task) }}" role="button">show</a>
+
+                    <a class="btn btn-info btn-sm text-white" href="{{ route('tasks.edit', $task) }}" role="button">edit</a>
                 </td>
             </tr>
             @endforeach
