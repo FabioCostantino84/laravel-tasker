@@ -1,6 +1,8 @@
 @extends('layouts.admin')
 
 @section('main-content')
+
+@include('partials.taskCreateForm')
     
 
 <div class="table-responsive">
