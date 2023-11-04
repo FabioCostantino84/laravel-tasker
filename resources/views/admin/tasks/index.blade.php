@@ -4,7 +4,7 @@
     
 
 <div class="table-responsive">
-    <table class="table table-info">
+    <table class="table table-primary">
         <thead>
             <tr>
                 <th scope="col">ID</th>
@@ -18,7 +18,7 @@
             <tr class="">
                 <td scope="row">{{$task->id}}</td>
                 <td>{{$task->description}}</td>
-                <td>{{$task->status ? 'to do' : 'done'}}</td>
+                <td>{{$task->status ? 'done' : 'to do'}}</td>
                 <td>{{$task->created_at}}</td>
             </tr>
             @endforeach
